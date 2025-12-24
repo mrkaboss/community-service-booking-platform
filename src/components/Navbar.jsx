@@ -1,7 +1,9 @@
+import { Link } from "react-router";
+
 const Navbar = () => {
   return (
     <nav>
-      <h1>Navbar</h1>
+  <button>Services</button>
     </nav>
   );
 };
