@@ -1,11 +1,11 @@
 const ProviderDashboard = () => {
   return (
-    <div className="grid grid-cols-4 justfaycontent-center gap-3">
+    <div className="grid grid-cols-2 grid-rows-2 justfaycontent-center gap-3">
   
       <section className="bg-gray-300 px-3 py-3">
-        <h2 className="text-2xl text white justifyContent-center">Provider Profile</h2>
-        <p><b>Name:</b> mr kaboss Service</p>
-        <p><b>Category:</b> Professional Cleaner</p>
+        <h2 className="text-2xl text white justify-Content-center">Provider Profile</h2>
+        <p className="text-xl"><b className="text-2xl">Name:</b> mr kaboss Service</p>
+        <p className="text-xl"><b>Category:</b> Professional developa</p>
         <p>Rating</p>
         <button className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold">Edit Profile</button>
       </section>
@@ -33,8 +33,8 @@ const ProviderDashboard = () => {
 
         <div>
           <div>
-            <p><b>Client:</b> Sarah</p>
-            <p>Service: House Cleaning</p>
+            <p><b>Client:</b> kaboss</p>
+            <p>Service: html css javascriput</p>
             <p>Date: Tomorrow 10:00</p>
           </div>
           <div>
