@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Services from "./pages/Services";
 import ServiceDetails from "./pages/ServiceDetails";
+import ClientDashboard from "./pages/ClientDashboard";
 import ProviderDashboard from "./pages/ProviderDashboard";
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
 
           <Route path="services" element={<Services />} />
           <Route path="services/:id" element={<ServiceDetails />} />
-
+           <Route path="client-dashboard" element={<ClientDashboard />} />
+        
+          
           <Route path="provider-dashboard" element={<ProviderDashboard />} />
         </Route>
       </Routes>
