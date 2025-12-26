@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-const LoginForm = () => {
-  const [formData, setFormData] = useState({ email: "", password: "" });
+const RegisterForm = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", password: "" });
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -26,7 +26,17 @@ const LoginForm = () => {
         onSubmit={handleSubmit}
         className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md space-y-4"
       >
-        <h2 className="text-2xl font-bold text-center text-gray-800">Login</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-800">Register</h2>
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
 
         <input
           type="email"
@@ -52,13 +62,13 @@ const LoginForm = () => {
           type="submit"
           className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
         >
-          Login
+          Register
         </button>
 
         <p className="text-sm text-gray-500 text-center">
-          Don't have an account?{" "}
-          <a href="/register" className="text-blue-600 hover:underline">
-            Register
+          Already have an account?{" "}
+          <a href="/login" className="text-blue-600 hover:underline">
+            Login
           </a>
         </p>
       </form>
@@ -66,4 +76,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;
