@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import ServiceDetails from "./pages/ServiceDetails";
 import ClientDashboard from "./pages/ClientDashboard";
 import ProviderDashboard from "./pages/ProviderDashboard";
+import BookingForm from "./pages/BookingForm";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
 
           <Route path="client-dashboard" element={<ClientDashboard />} />
           <Route path="provider-dashboard" element={<ProviderDashboard />} />
+
+          <Route path="booking/:id" element={<BookingForm />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

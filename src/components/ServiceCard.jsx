@@ -1,9 +1,9 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   return (
     <div className="border rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-      
+
       <img
         src={service.image}
         alt={service.title}
@@ -34,9 +34,13 @@ const ServiceCard = ({ service }) => {
           </span>
 
           {service.available ? (
-            <Link to="/booking" className="bg-blue-600 text-white px-3 py-1 rounded text-sm">
+            <Link
+              to={`/booking/${service.id}`}
+              className="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+            >
               Book Now
             </Link>
+
           ) : (
             <span className="text-red-500 text-sm font-semibold">
               Not Available

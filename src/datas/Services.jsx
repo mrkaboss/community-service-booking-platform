@@ -1,6 +1,6 @@
 const services = [
   {
-    id: "1",
+    id: 1,
     title: "House Cleaning",
     description: "Professional house cleaning for homes and offices.",
     category: "Cleaning",
@@ -12,7 +12,7 @@ const services = [
     image: "/images/cleaning.jpg",
   },
   {
-    id: "2",
+    id: 2,
     title: "Plumbing Repair",
     description: "Fixing pipes, sinks, and water systems efficiently.",
     category: "Plumbing",
@@ -24,7 +24,7 @@ const services = [
     image: "/images/plumbing.jpg",
   },
   {
-    id: "3",
+    id: 3,
     title: "Electrical Installation",
     description: "Home electrical installation and maintenance.",
     category: "Electrical",
@@ -36,10 +36,8 @@ const services = [
     image: "/images/electrical.jpg",
   },
 
-  // 🔽 NEW SERVICES 🔽
-
   {
-    id: "4",
+    id: 4,
     title: "Gardening Services",
     description: "Lawn mowing, garden cleaning, and plant maintenance.",
     category: "Gardening",
@@ -51,7 +49,7 @@ const services = [
     image: "/images/gardening.jpg",
   },
   {
-    id: "5",
+    id: 5,
     title: "Laundry Services",
     description: "Washing, drying, and ironing clothes professionally.",
     category: "Laundry",
@@ -63,7 +61,7 @@ const services = [
     image: "/images/laundry.jpg",
   },
   {
-    id: "6",
+    id: 6,
     title: "Car Wash",
     description: "Interior and exterior car washing services.",
     category: "Automotive",
@@ -75,7 +73,7 @@ const services = [
     image: "/images/carwash.jpg",
   },
   {
-    id: "7",
+    id: 7,
     title: "Painting Services",
     description: "House and office painting with quality finishes.",
     category: "Painting",
@@ -87,7 +85,7 @@ const services = [
     image: "/images/painting.jpg",
   },
   {
-    id: "8",
+    id: 8,
     title: "Computer Repair",
     description: "Laptop and desktop repair and software installation.",
     category: "IT Services",
