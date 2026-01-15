@@ -29,7 +29,7 @@ const Navbar = () => {
           Client Dashboard
         </Link>
 
-        <Link to="/login" className="hover:text-blue-300 transition">
+        <Link to="/login" className="hover:text-blue-400 transition">
           Login
         </Link>
 
