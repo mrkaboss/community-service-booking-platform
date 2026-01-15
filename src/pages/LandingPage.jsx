@@ -25,7 +25,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-blue-800 text-white py-16 px-10 text-center">
+      <section className="bg-green-300">
         <h1 className="text-4xl font-bold mb-4">Find the Best Services</h1>
         
         {/* --- SEARCH BAR --- */}
