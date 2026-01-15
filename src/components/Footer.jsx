@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import { MdEmail, MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
 
